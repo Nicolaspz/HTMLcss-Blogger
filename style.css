@@ -1,0 +1,368 @@
+/* formatação das classes base*/
+
+html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    color: white;
+}
+body{
+    background: #000;
+    overflow-x: hidden;
+}
+.medio{
+    width: 50%;
+   
+}
+.medio-mais{
+    width: 70%;
+    
+}
+.pequeno{
+    width: 30%;
+  
+    
+}
+.container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.esquerda{
+    float: left;
+    margin-left: 20px;
+}
+.direita{
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.clear{
+    clear: both;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+h1,h2,h3{
+    color: rgb(253, 0, 219);
+}
+/* formatando Menu bars icon*/
+.icobars{
+    display: none;
+    width: 5rem;
+    position: absolute;
+    top: 8px;
+    right:9px;
+    cursor: pointer;
+    
+}
+.icobars ul{
+   width: 2.3rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+
+}
+.icobars ul li {
+    width: 100%;
+    padding: 1.5px;
+    background: white;
+    margin:4px;
+    border-radius: 10px;
+}
+.icobars ul li.alf {
+    width: 50%;
+ }
+ .icobars ul li.end{
+   background: white;
+    transform-origin:right;
+    align-self:flex-end;
+    margin-right:-5.5px;
+    
+ }
+
+.icobars ul li.start {
+    transform-origin:left;
+   
+} 
+/*Formatando menu mobile*/
+.menu-mobile{
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.726);
+    top: 100%;
+    left: 0;
+    display: none;
+    
+}
+.menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    margin: 15px;
+}
+.menu-mobile ul li {
+    margin: 4px;
+} 
+/* formatando flex e itens e menu*/
+
+.flex{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+   
+    
+}
+.centra{
+    width: 100%;
+    margin: 0 auto;
+}
+.img-novos{
+    widows: 250px;
+    height: 250px;
+    
+}
+.img-novos img {
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+    position: absolute;
+    z-index: 1;
+}
+.img-novos img:hover {
+    transform: 2s;
+    transform: scale(1.2);
+    z-index: 10;
+}
+.novos{
+    margin-top: 80px;
+}
+.item{
+    align-items: center;
+    position: relative;
+    z-index: 3;
+   align-self:center;
+    width: 340px;
+    height: 250px;
+   
+    margin-bottom: 20px;
+    box-shadow:5px 4px 9px 5px rgba(255, 255, 255, 0.397);
+    overflow: hidden;
+}
+.maior{
+    height: 330px;
+    
+}
+.maior .img-novos img{
+    height:330px ;
+}
+nav{
+   background: rgb(0, 0, 0); 
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 100;
+  box-shadow: 0 0 30px 6px rgba(255, 255, 255, 0.562);
+   
+   
+}
+.menu  ul li:nth-child(3){
+    position: relative;
+    
+}
+.menu ul li a:hover{
+  color:  rgb(255, 0, 212);
+  transition: .3s;
+}
+
+.menu ul li{
+    margin-left: 30px;
+}
+ .sub-menu-estilo{
+    position: absolute;
+    right:17%;
+    top:100%;
+    display: none;
+    z-index: 15;
+ }
+.sub-menu-estilo ul li{
+    padding-top: 4px;
+    text-align: center;
+   padding-left: 20px;
+   padding-right: 20px;
+    background: rgba(255, 0, 212, 0.459);
+    
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(253, 251, 251, 0.411);
+    z-index: 2;
+}
+.sub-menu-estilo ul li a{
+   
+    }
+   /*formatando o menu de baixo*/
+    .Sub-menu{
+        background: rgb(255, 0, 212);
+        padding: 4px;
+        
+    }
+    .Sub-menu{
+     width: 100%;
+     text-align: center;
+        
+    }
+    .Sub-menu li{
+        width: 100%;
+        text-align: center;
+           
+       }
+        /* formatando publicaçoes direita*/
+        .listas{
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .img{
+            position: relative;
+            width: 150px;
+            height:150px;
+         }
+         .item-pub{
+            
+             align-self: baseline;
+         }
+        .img img{
+            position: absolute;
+            width: 100%;
+            height:100%;
+            left: 0;
+            
+        }
+        .img video{
+            position: absolute;
+            width: 100%;
+            height:100%;
+            left: 0;
+            
+        }
+        .conteudo{
+            width: 450px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .pequeno{
+           padding-left: 10px;
+           text-align: center;
+        }
+        .download h4{
+           background: rgba(255, 0, 191, 0.068);
+            
+        }
+        /* formatando publicaçoes-esquerda*/
+       .img-publi{
+        position: relative;
+        
+        left: 30px;
+           
+       }
+       form{
+        text-align: left;
+        margin-left:5px;
+        margin-bottom: 20px;
+      
+       }
+       form input,textarea{
+           width: 90%;
+           border-style: none;
+           padding: 10px;
+       }
+       form input{
+           height: 15px;
+       }
+       form button{
+       width: 50%;
+       margin-left: 25%;
+       margin-top: 10px;
+        transition: .3s;
+       padding: 6px;
+       border-style: none;
+       background: rgb(255, 0, 242);
+       color: white;
+       font-weight: bold;
+    }
+    form button:hover{
+        background:white;
+       color: rgb(255, 0, 242);
+    }
+    /* formatando o footer*/
+    footer{
+        text-align: center;
+        background: rgb(255, 0, 242);
+        padding: 20px;
+        position: relative;
+    }
+    .sub-footer{
+        position: absolute;
+        width: 100%;
+        background: rgb(143, 2, 108);
+        bottom: 0;
+        left: 0;
+        padding: 10px;
+    }
+    footer ul{
+        margin-bottom:40px;
+    }
+
+    @media screen and (max-width:678px){
+        .flex{
+            flex-direction: column;
+            
+        }
+        .primeiro{
+            margin-top: 20px;
+        }
+       
+        
+        .item{
+            margin-bottom:60px;
+        }
+        .menu{
+            display: none;
+        }
+        .esquerda{
+            float: none;
+            text-align: center;
+        }
+        .medio-mais,.pequeno{
+            width: 100%;
+            align-items: center;
+        }
+        .conteudo{
+            
+            width: 100%;
+            margin-left: 0;
+        }
+        .img-publi{
+             position: relative;
+             left: -6%;
+           }
+           .icobars{
+            display: block;
+        }
+    }
